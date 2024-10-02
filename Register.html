@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Register.css">
+    <script src="Register.js"></script>
+</head>
+<body>
+    <div id="navbar">
+        <div id="navbarlc">
+            <img src="icon.png" alt="" width="200px"> 
+        </div>
+        <div id="navbarrc">
+            <ul>
+            <li>
+                <a href="Header.html" id="button1">
+                Home    
+                </a>
+            </li>
+            <li>
+                <a href=""id="button2">
+                Products    
+                </a>
+                <ul class="dropdown">
+                    <li><a href="" id="button4">Healthcare</a></li>
+                    <li><a href="Products.html" id="button4">Cosmetic</a></li>
+                    <li><a href="" id="button4">Miscellanous</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="AboutUs.html" id="button1">
+                About Us
+                </a>
+            </li>
+            <li>
+                <a href="Register.html" id="button1">
+                Register   
+                </a>
+            </li>
+            <li>
+                <a href="Login.html" id="button3">
+                Login    
+                </a>
+            </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="register">
+        <h1>Register</h1>
+        <div id="registercontent">
+            <form onsubmit="return validasi()">
+            <div class="regisitem">
+                <input type="text" id="nama">
+                <span id="nonama"></span>
+                <label for="nama">Full Name</label>
+            </div>
+            <div class="regisitem">
+                <input type="text" id="email">
+                <span id="noemail"></span>
+                <label for="email">Email</label>
+            </div>
+            <div class="regisoption">
+               <label class="block">Gender</label>
+               <input type="radio" name="jeniskelamin" id="male" value="male" required>
+               <label for="male">Male</label>
+               <input type="radio" name="jeniskelamin" id="female" value="female" required>
+               <label for="female">Female</label>
+               <span id="nogender"></span>
+            </div>
+            <div class="regiscity">
+                <label for="city">City</label>
+                <select id="lokasi">
+                    <option value="Jakarta">Jakarta</option>
+                    <option value="Aceh">Aceh</option>
+                    <option value="Medan">Medan</option>
+                    <option value="Palembang">Palembang</option>
+                    <option value="Surabaya">Surabaya</option>
+                    <option value="Pontianak">Pontianak</option>
+                    <option value="Balikpapan">Balikpapan</option>
+                    <option value="Makassar">Makassar</option>
+                </select>
+            </div>
+            <div class="regisitem">
+                <input type="password" id="password">
+                <span id="nopass"></span>
+                <label for="password">Password</label>
+            </div>
+            <div class="regisitem">
+                <input type="password" id="confirmpass">
+                <span id="noconfirmpass"></span>
+                <label for="confirmpass">Confirm Password</label>
+            </div>
+            <button type="submit">Register</button>
+            </form>
+        </div>
+    </div>
+
+    <footer></footer>
+    <div id="footer">
+        <div class="sosmed">
+        <a href="https://twitter.com/" target="_blank">
+        <img src="download.png" alt="" width="25px">   
+        </a>
+        <a href="https://facebook.com/"target="_blank">
+            <img src="b763699fd1fa3bfb374442593ae642e1.png" alt="" width="30px">
+        </a>
+        <a href="https://instagram.com/" target="_blank">
+            <img src="5ecec78673e4440004f09e77.png" alt="" width="25px">
+        </a>
+        </div>
+        <div class="copyright">
+            Copyright 2022 Bernardus Ignasio. All Rights Reserved.
+        </div>
+    </div>
+</body>
+</html>
